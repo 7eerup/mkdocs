@@ -1,0 +1,34 @@
+site_name: MkDocs
+
+theme:
+  name: material
+  palette:
+      primary: grey
+      accent: blue
+  language: ko
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/extra.js
+
+plugins:
+  - search
+  - awesome-pages
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
